@@ -6,7 +6,8 @@ const ProductPricing = () => {
     {
       name: "EUCEL Original",
       subtitle: "Dòng sản phẩm gốc",
-      price: "Liên hệ",
+      price: "1.350–1.550 đ/lần",
+      priceBox: "135.000–155.000 đ",
       icon: <Package className="w-12 h-12" />,
       features: [
         "Chiết xuất từ vỏ quả bồ hòn tự nhiên",
@@ -22,7 +23,8 @@ const ProductPricing = () => {
     {
       name: "EUCEL Sensitive",
       subtitle: "Dòng dành cho da nhạy cảm",
-      price: "Liên hệ",
+      price: "1.650–1.850 đ/lần",
+      priceBox: "165.000–185.000 đ",
       icon: <Star className="w-12 h-12" />,
       features: [
         "Công thức đặc biệt cho da nhạy cảm",
@@ -75,8 +77,8 @@ const ProductPricing = () => {
                 <h3 className="text-3xl font-bold text-center mb-2">{plan.name}</h3>
                 <p className="text-center text-white/90 mb-6">{plan.subtitle}</p>
                 <div className="text-center">
-                  <div className="text-4xl font-bold">{plan.price}</div>
-                  <p className="text-white/80 mt-2">Giá linh hoạt theo số lượng</p>
+                  <div className="text-5xl font-bold">{plan.price}</div>
+                  <p className="text-white/90 mt-2 text-lg font-semibold">{plan.priceBox}/hộp 100 viên</p>
                 </div>
               </div>
 
@@ -107,6 +109,9 @@ const ProductPricing = () => {
                 <button className={`w-full mt-8 bg-gradient-to-r ${plan.gradient} text-white font-bold py-4 px-8 rounded-full hover:shadow-lg transform hover:scale-105 transition-all`}>
                   Liên hệ đặt hàng
                 </button>
+                <p className="text-center text-gray-500 text-sm mt-3 font-semibold">
+                  Từ {plan.priceBox}/hộp 100 viên
+                </p>
               </div>
             </div>
           ))}

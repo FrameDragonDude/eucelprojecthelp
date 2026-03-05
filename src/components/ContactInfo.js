@@ -165,37 +165,56 @@ const ContactInfo = () => {
 
               {/* Social Media */}
               <div className="bg-gradient-to-r from-green-500 to-amber-500 rounded-3xl shadow-xl p-8 text-white">
-                <h3 className="text-2xl font-bold mb-4 text-center">
+                <h3 className="text-2xl font-bold mb-6 text-center">
                   Kết Nối Với Chúng Tôi
                 </h3>
-                <div className="flex justify-center space-x-6">
-                  <a
-                    href="https://facebook.com"
-                    target="_blank"
-                    rel="noreferrer"
-                    aria-label="Facebook EUCEL"
-                    className="bg-white/20 hover:bg-white/30 p-4 rounded-full transition-all transform hover:scale-110"
-                  >
-                    <Facebook className="w-6 h-6" />
-                  </a>
-                  <a
-                    href="https://instagram.com"
-                    target="_blank"
-                    rel="noreferrer"
-                    aria-label="Instagram EUCEL"
-                    className="bg-white/20 hover:bg-white/30 p-4 rounded-full transition-all transform hover:scale-110"
-                  >
-                    <Instagram className="w-6 h-6" />
-                  </a>
-                  <a
-                    href="https://twitter.com"
-                    target="_blank"
-                    rel="noreferrer"
-                    aria-label="Twitter EUCEL"
-                    className="bg-white/20 hover:bg-white/30 p-4 rounded-full transition-all transform hover:scale-110"
-                  >
-                    <Twitter className="w-6 h-6" />
-                  </a>
+                
+                <div className="flex flex-col md:flex-row items-center justify-center gap-8">
+                  {/* QR Code Section */}
+                  <div className="bg-white rounded-2xl p-4 shadow-lg">
+                    <img 
+                      src="/picture/qr.png" 
+                      alt="QR Code Facebook EUCEL" 
+                      className="w-40 h-40 object-cover rounded-lg"
+                    />
+                    <p className="text-gray-800 text-sm font-semibold text-center mt-2">
+                      Quét mã để kết nối
+                    </p>
+                  </div>
+                  
+                  {/* Social Icons */}
+                  <div className="flex flex-col items-center">
+                    <p className="text-white/90 mb-4 text-center">Theo dõi chúng tôi trên</p>
+                    <div className="flex space-x-4">
+                      <a
+                        href="https://facebook.com"
+                        target="_blank"
+                        rel="noreferrer"
+                        aria-label="Facebook EUCEL"
+                        className="bg-white/20 hover:bg-white/30 p-4 rounded-full transition-all transform hover:scale-110"
+                      >
+                        <Facebook className="w-6 h-6" />
+                      </a>
+                      <a
+                        href="https://instagram.com"
+                        target="_blank"
+                        rel="noreferrer"
+                        aria-label="Instagram EUCEL"
+                        className="bg-white/20 hover:bg-white/30 p-4 rounded-full transition-all transform hover:scale-110"
+                      >
+                        <Instagram className="w-6 h-6" />
+                      </a>
+                      <a
+                        href="https://twitter.com"
+                        target="_blank"
+                        rel="noreferrer"
+                        aria-label="Twitter EUCEL"
+                        className="bg-white/20 hover:bg-white/30 p-4 rounded-full transition-all transform hover:scale-110"
+                      >
+                        <Twitter className="w-6 h-6" />
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -210,6 +229,7 @@ const ContactInfo = () => {
             {/* Company Info */}
             <div className="md:col-span-2">
               <img src="/picture/logo.png" alt="EUCEL Logo" className="h-16 mb-4" />
+              <p className="text-green-400 font-semibold mb-3 text-sm">Natural</p>
               <p className="text-gray-400 mb-4">
                 EUCEL - Nước tẩy rửa sinh học từ thiên nhiên. Cam kết mang đến sản phẩm an toàn, thân thiện với môi trường và hiệu quả cao.
               </p>
