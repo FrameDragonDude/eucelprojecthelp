@@ -27,6 +27,9 @@ const Hero = () => {
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-4 drop-shadow-lg">
             EUCEL
           </h1>
+          <p className="text-lg md:text-xl text-white/80 mb-6 drop-shadow-md font-semibold">
+            Natural
+          </p>
           <p className="text-xl md:text-2xl text-white/90 mb-8 drop-shadow-md">
             Bảo Vệ Trái Đất - Tương Lai Xanh
           </p>
