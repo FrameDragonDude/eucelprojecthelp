@@ -173,7 +173,7 @@ const ContactInfo = () => {
                   {/* QR Code Section */}
                   <div className="bg-white rounded-2xl p-4 shadow-lg">
                     <img 
-                      src="/picture/qr.png" 
+                      src="/picture/maquet.png" 
                       alt="QR Code Facebook EUCEL" 
                       className="w-40 h-40 object-cover rounded-lg"
                     />
